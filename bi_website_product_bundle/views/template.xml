@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+	<!-- Product listing page added Pack product ribbon -->
+		<template id="product_pack_list" inherit_id="website_sale.products_item">
+			<xpath expr="//div[hasclass('ribbon-wrapper')]" position="replace">
+				<div class="ribbon-wrapper">
+				    <div class="ribbon btn btn-danger">Pack</div>
+				 </div>
+			</xpath>
+	
+		</template>
+
+	    <template id="packs_product_page" inherit_id="website_sale.product_price">
+		<xpath expr="//div/h4[hasclass('css_editable_mode_hidden')]" position="after">
+			<t t-if="product.is_pack == True">
+			    <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#myPack" style="margin-bottom: 10px;"><b>Pack Details</b></a>
+			</t>
+		
+			<div class="modal fade" id="myPack" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+				    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">×</span>
+					</button>
+					<h5 class="modal-title text-center" id="PackModalLabel"><b>Pack Products</b></h5>
+				  </div>
+				  <!-- <div class="modal-body" style="display:none;"></div> -->
+				  <div class="modal-body" style="overflow: scroll;max-height: 400px;display: inherit;">
+					<t t-foreach="product.sudo().pack_ids" t-as="pack">
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="pack_products_item_image">
+								<a t-att-href="'/shop/product/%s' % pack.product_id.product_tmpl_id.id">
+									<span t-field="pack.bi_image" t-options='{"widget": "image", "class": "img img-responsive"}'/>
+								</a>
+							</div>
+							<div class="pack-name">
+								<h5>
+								  <a t-att-href="'/shop/product/%s' % pack.product_id.product_tmpl_id.id" t-field="pack.product_id.display_name"></a>
+								</h5>
+							</div>
+							
+							 <div class="pack-price">
+								  <!-- Price -->
+								<span><b>Unit Price: </b><span t-field="pack.product_id.lst_price" style="white-space: nowrap; color: #D9534F;" t-options="{'widget': 'monetary','display_currency': website.currency_id}" /></span>
+			  
+								<!-- End Price -->
+							 </div>
+							 
+							 <div class="pack-qty">
+								  <!-- qty -->
+								<span><b>Quantity: </b><span t-esc="int(float(pack.qty_uom))" style="color: #D9534F;"/></span>
+			  
+								<!-- End qty -->
+							 </div>
+							
+						</div>
+					</t>
+					
+					<!--<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>-->
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</xpath>
+	</template>
+    </data>
+</odoo>
+
