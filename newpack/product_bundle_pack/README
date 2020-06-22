@@ -1,0 +1,17 @@
+26/11/2019 13.0.0.0
+
+-> Fix procurement method for product bundle pack, 
+create delivery for product bundle pack products.
+
+17th april 2020
+-> module compitible with bi_pos_dynamic_product_pack
+
+=> 13.0.0.2 : Improved an index related, demanded apps link version or remove unused images.
+
+Version 13.0.0.3 : (08/06/20)
+		- Remove warnings by adding _description
+		- Remove warnings by using hasclass instead of @class in xml template.
+
+Version 13.0.0.4 : (19/06/20)
+		- remove _get_delivered_qty method
+		- Update _compute_qty_delivered(), _action_launch_stock_rule(), _prepare_procurement_values() methods as per base.
