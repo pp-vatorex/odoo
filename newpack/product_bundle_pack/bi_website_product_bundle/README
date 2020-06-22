@@ -1,0 +1,5 @@
+13.0.0.1
+-> Solve 403 issue when pack is on website.
+
+Version 13.0.0.2 : (08/06/20)
+		- Remove warnings by using hasclass instead of @class in xml template.
