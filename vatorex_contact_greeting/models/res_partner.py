@@ -6,7 +6,7 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
 
     greeting_msg = fields.Text(compute='_compute_greeting_msg',store=True, translate=True)
-    gender = fields.Selection([('female', 'F'), ('male', 'M'), ('unknown', 'Unknown')], required=True, default='unknown')
+    gender = fields.Selection([('female', 'F'), ('malea', 'M'), ('unknown', 'Unknown')], required=True, default='unknown')
     type_greeting_msg = fields.Selection([('informal', 'Informal'), ('formal', 'Formal')], required=True, default='formal')
 
     @api.depends('firstname', 'lastname','type_greeting_msg', 'gender')
