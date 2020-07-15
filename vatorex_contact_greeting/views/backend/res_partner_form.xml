@@ -11,7 +11,7 @@
                     <field name="type_greeting_msg"/><br/>
                     <label for="gender">Gender</label>
                     <field name="type_greeting_msg"/><br/>
-                    <label for="greeting_msg">Greeting text</label>
+                    <label for="greeting_msg">Greeting text changed again</label>
                     <field name="greeting_msg"/>
                 </group>
             </xpath>
