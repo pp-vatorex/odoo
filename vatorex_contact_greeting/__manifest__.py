@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 {
-    'name': 'Vatorex: Formal and informal greeting',
+    'name': 'Vatorex: Formal and informal greetings',
     'category': 'Hidden',
     'sequence': 7,
     'summary': 'Vatorex: Formal and informal greeting',
