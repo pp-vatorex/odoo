@@ -13,7 +13,6 @@
                     <field name="type_greeting_msg"/><br/>
                     <label for="greeting_msg">Greeting text</label>
                     <field name="greeting_msg"/>
-
                 </group>
             </xpath>
 	    </field>
