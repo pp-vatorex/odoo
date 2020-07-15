@@ -1,5 +1,5 @@
 {
-    'name': 'Vatorex: Custom CSS & JS',
+    'name': 'Vatorex: Custom CSS and JS',
     'description': 'Add custom CSS & Javascript rules to this module for frontend',
     'category': 'Hidden',
     'summary': 'Vatorex: Custom CSS & JS',
