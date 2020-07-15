@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 {
-    'name': 'Vatorex: Blog & blocks select language',
+    'name': 'Vatorex: Blog and blocks select language',
     'category': 'Hidden',
     'sequence': 7,
     'summary': 'Show/hide blog posts / blocks for specific languages',
