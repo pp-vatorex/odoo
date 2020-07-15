@@ -8,6 +8,7 @@
     'description': '',
     'depends': [
         'contacts',
+        'partner_firstname',
     ],
     'images': [
         'static/description/website_theme_screenshot.jpg',
