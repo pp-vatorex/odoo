@@ -3,7 +3,7 @@
     'name': 'Vatorex: Formal and informal greetings',
     'category': 'Hidden',
     'sequence': 7,
-    'summary': 'Vatorex: Formal and informal greeting',
+    'summary': 'Vatorex: Formal and informal greeting GITHUB',
     'version': '0.1',
     'description': '',
     'depends': [
