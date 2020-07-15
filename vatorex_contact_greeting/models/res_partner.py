@@ -8,10 +8,10 @@ class ResPartner(models.Model):
     greeting_msg = fields.Text(compute='_compute_greeting_msg',store=True, translate=True)
     gender = fields.Selection([('female', 'F'), ('male', 'M'), ('unknown', 'Unknown')], required=True, default='unknown')
     type_greeting_msg = fields.Selection([('informal', 'Informal'), ('formal', 'Formal')], required=True, default='formal')
-    greeting_text_informal = fields.text('Hello', store=True, translate=True)
-    greeting_text_formal_female = fields.text('Dear Mrs', store=True, translate=True)
-    greeting_text_formal_male = fields.text('Dear Mr', store=True, translate=True)
-    greeting_text_formal_unknown = fields.text('Dear', store=True, translate=True)
+    greeting_text_informal = fields.Text('Hello', store=True, translate=True)
+    greeting_text_formal_female = fields.Text('Dear Mrs', store=True, translate=True)
+    greeting_text_formal_male = fields.Text('Dear Mr', store=True, translate=True)
+    greeting_text_formal_unknown = fields.Text('Dear', store=True, translate=True)
 
     @api.depends('firstname', 'lastname','type_greeting_msg', 'gender')
     def _compute_greeting_msg(self):
