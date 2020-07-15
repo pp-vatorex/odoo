@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 {
-    'name': 'Vatorex: Formal and informal greetings',
+    'name': 'Vatorex: Formal and informal greeting',
     'category': 'Hidden',
     'sequence': 7,
-    'summary': 'Vatorex: Formal and informal greeting GITHUB',
+    'summary': 'Vatorex: Formal and informal greeting',
     'version': '0.1',
     'description': '',
     'depends': [
