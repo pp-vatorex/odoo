@@ -18,10 +18,10 @@ class ResPartner(models.Model):
         for record in self:
             if record.type_greeting_msg == 'informal':
                 record.greeting_msg = record.greeting_text_informal + ' ' + record.firstname
-            else if record.type_greeting_msg == 'formal':
-                if record.gender == 'female'
+            elif record.type_greeting_msg == 'formal':
+                if record.gender == 'female':
                     record.greeting_msg = record.greeting_text_formal_female + ' ' + record.lastname
-                else if record.gender == 'male'
+                elif record.gender == 'male':
                     record.greeting_msg = record.greeting_text_formal_male + ' ' + record.lastname
-                else if record.gender == 'unknown'
+                elif record.gender == 'unknown':
                     record.greeting_msg = record.greeting_text_formal_unknown + ' ' + record.name
