@@ -8,7 +8,7 @@ class ResPartner(models.Model):
     greeting_msg = fields.Text(compute='_compute_greeting_msg',store=True, translate=True)
     gender = fields.Selection([('female', 'Female'), ('male', 'Male'), ('unknown', 'Unknown')], required=True, default='unknown')
     type_greeting_msg = fields.Selection([('informal', 'Informal'), ('formal', 'Formal')], required=True, default='formal')
-    greeting_text_informal = 'Hello'
+    greeting_text_informal = _("Bank Accounts")
     greeting_text_formal_female = 'Dear Mrs'
     greeting_text_formal_male = 'Dear Mr'
     greeting_text_formal_unknown = 'Dear'
