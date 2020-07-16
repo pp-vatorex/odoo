@@ -1,0 +1,65 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vatorex_contact_greeting
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-16 09:44+0000\n"
+"PO-Revision-Date: 2020-07-16 09:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vatorex_contact_greeting
+#: model:ir.model,name:vatorex_contact_greeting.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: vatorex_contact_greeting
+#: model:ir.model.fields.selection,name:vatorex_contact_greeting.selection__res_partner__type_greeting_msg__formal
+msgid "Formal"
+msgstr ""
+
+#. module: vatorex_contact_greeting
+#: model:ir.model.fields,field_description:vatorex_contact_greeting.field_res_partner__gender
+#: model:ir.model.fields,field_description:vatorex_contact_greeting.field_res_users__gender
+#: model_terms:ir.ui.view,arch_db:vatorex_contact_greeting.res_partner_view_form
+msgid "Gender"
+msgstr ""
+
+#. module: vatorex_contact_greeting
+#: model_terms:ir.ui.view,arch_db:vatorex_contact_greeting.res_partner_view_form
+msgid "Greeting"
+msgstr ""
+
+#. module: vatorex_contact_greeting
+#: model:ir.model.fields,field_description:vatorex_contact_greeting.field_res_partner__greeting_msg
+#: model:ir.model.fields,field_description:vatorex_contact_greeting.field_res_users__greeting_msg
+msgid "Greeting Msg"
+msgstr ""
+
+#. module: vatorex_contact_greeting
+#: model_terms:ir.ui.view,arch_db:vatorex_contact_greeting.res_partner_view_form
+msgid "Greeting text changed again"
+msgstr ""
+
+#. module: vatorex_contact_greeting
+#: model:ir.model.fields.selection,name:vatorex_contact_greeting.selection__res_partner__type_greeting_msg__informal
+msgid "Informal"
+msgstr ""
+
+#. module: vatorex_contact_greeting
+#: model:ir.model.fields,field_description:vatorex_contact_greeting.field_res_partner__type_greeting_msg
+#: model:ir.model.fields,field_description:vatorex_contact_greeting.field_res_users__type_greeting_msg
+msgid "Type Greeting Msg"
+msgstr ""
+
+#. module: vatorex_contact_greeting
+#: model:ir.model.fields.selection,name:vatorex_contact_greeting.selection__res_partner__gender__unknown
+msgid "Unknown"
+msgstr ""
