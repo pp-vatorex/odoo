@@ -10,7 +10,7 @@
                     <label for="type_greeting_msg">Greeting</label>
                     <field name="type_greeting_msg"/><br/>
                     <label for="gender">Gender</label>
-                    <field name="type_greeting_msg"/><br/>
+                    <field name="gender"/><br/>
                     <label for="greeting_msg">Greeting text changed again</label>
                     <field name="greeting_msg"/>
                 </group>
