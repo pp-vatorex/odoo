@@ -8,6 +8,7 @@
 
             <xpath expr="//field[@name='website_id']" position="after">
                 <field name="language_available_ids" widget="many2many_checkboxes"/>
+                <field name="asd">
             </xpath>
 
             <!-- add the content in the backend, to add t-if="" on Web editor -->
