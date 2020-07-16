@@ -6,10 +6,8 @@
         <field name="inherit_id" ref="website.website_pages_form_view"/>
         <field name="arch" type="xml">
 
-            <xpath expr="//field[@name='menu_ids']" position="after">
-                <page name="content" string="HTML Content">
-                    <field name="arch" string="arch"/>
-                </page>
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="language_available_ids" widget="many2many_checkboxes"/>
             </xpath>
 
         </field>
