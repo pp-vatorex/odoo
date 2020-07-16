@@ -6,11 +6,16 @@
         <field name="inherit_id" ref="website.website_pages_form_view"/>
         <field name="arch" type="xml">
 
-            <xpath expr="//field[@name='menu_ids']" position="after">
-                <page name="content" string="Content">
-                    <field name="arch" string="arch"/>
-                </page>
-            </xpath>
+        <xpath expr="//form[1]/sheet[1]/group[1]" position="after">
+            <notebook name="pp_notebook">
+            <page name="pp_Page" string="New Page">
+                <group name="ppg1">
+                <group name="ppg2"/>
+                <group name="ppg3"/>
+                </group>
+            </page>
+            </notebook>
+        </xpath>
 
         </field>
     </record>
