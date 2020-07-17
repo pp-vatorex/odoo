@@ -1,10 +1,20 @@
 # -*- coding: utf-8 -*-
 from odoo import api, fields, models, _
 
-greeting_text_informal = _("Hello")
-greeting_text_formal_female = _('Dear Mrs')
-greeting_text_formal_male = _('Dear Mr')
-greeting_text_formal_unknown = _('Dear')
+# example_to_translate_with_pot_and_po = _("translate me")
+
+# default greeting messages (english)
+greeting_text_informal = "Hello"
+greeting_text_formal_female = 'Dear Mrs'
+greeting_text_formal_male = 'Dear Mr'
+greeting_text_formal_unknown = 'Dear'
+
+# German
+if res.partner.lang == 'de_DE':
+    greeting_text_informal = "Hallo"
+    greeting_text_formal_female = 'Sehr geehrte Frau'
+    greeting_text_formal_male = 'Sehr geehrter Herr'
+    greeting_text_formal_unknown = 'Sehr geehrte/r'
 
 class ResPartner(models.Model):
     _inherit = 'res.partner'
