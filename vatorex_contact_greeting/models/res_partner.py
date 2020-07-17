@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 from odoo import api, fields, models, _
 
-title = _("Contact")
-greeting_text_informal = "Contact"
-greeting_text_formal_female = 'Dear Mrs'
-greeting_text_formal_male = 'Dear Mr'
-greeting_text_formal_unknown = 'Dear'
+greeting_text_informal = -("Hello")
+greeting_text_formal_female = _('Dear Mrs')
+greeting_text_formal_male = _('Dear Mr')
+greeting_text_formal_unknown = _('Dear')
 
 class ResPartner(models.Model):
     _inherit = 'res.partner'
@@ -18,11 +17,11 @@ class ResPartner(models.Model):
     def _compute_greeting_msg(self):
         for record in self:
             if record.type_greeting_msg == 'informal':
-                record.greeting_msg = record.greeting_text_informal + ' ' + record.firstname
+                record.greeting_msg = greeting_text_informal + ' ' + record.firstname
             elif record.type_greeting_msg == 'formal':
                 if record.gender == 'female':
-                    record.greeting_msg = record.greeting_text_formal_female + ' ' + record.lastname
+                    record.greeting_msg = greeting_text_formal_female + ' ' + record.lastname
                 elif record.gender == 'male':
-                    record.greeting_msg = record.greeting_text_formal_male + ' ' + record.lastname
+                    record.greeting_msg = greeting_text_formal_male + ' ' + record.lastname
                 elif record.gender == 'unknown':
-                    record.greeting_msg = 'Dear ' + record.name
+                    record.greeting_msg = greeting_text_formal_male + ' ' + record.name
