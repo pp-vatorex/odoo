@@ -34,4 +34,4 @@ class ResPartner(models.Model):
                 elif record.gender == 'male':
                     record.greeting_msg = greeting_text_formal_male + ' ' + record.lastname
                 elif record.gender == 'unknown':
-                    record.greeting_msg = greeting_text_formal_male + ' ' + record.name
+                    record.greeting_msg = greeting_text_formal_unknown + ' ' + record.name
