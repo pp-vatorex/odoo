@@ -4,9 +4,9 @@ from odoo import api, fields, models, _
 class ResPartner(models.Model):
     _inherit = 'res.partner'
 
-    greeting_msg = fields.Text(compute='_compute_greeting_msg',store=True, translate=True)
-    gender = fields.Selection([('female', 'Female'), ('male', 'Male'), ('unknown', 'Unknown')], required=True, default='unknown')
-    type_greeting_msg = fields.Selection([('informal', 'Informal'), ('formal', 'Formal')], required=True, default='formal')
+    greeting_msg = fields.Text(compute='_compute_greeting_msg',store=True, translate=True, string='Greeting Message')
+    gender = fields.Selection([('female', 'Female'), ('male', 'Male'), ('unknown', 'Unknown')], required=True, default='unknown', string='Gender')
+    type_greeting_msg = fields.Selection([('informal', 'Informal'), ('formal', 'Formal')], required=True, default='formal', string='Formality')
 
     @api.depends('firstname', 'lastname', 'name', 'type_greeting_msg', 'gender')
     def _compute_greeting_msg(self):
