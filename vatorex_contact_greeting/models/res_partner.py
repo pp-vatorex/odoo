@@ -8,7 +8,7 @@ class ResPartner(models.Model):
     gender = fields.Selection([('female', 'Female'), ('male', 'Male'), ('unknown', 'Unknown')], required=True, default='unknown', string='Gender')
     type_greeting_msg = fields.Selection([('informal', 'Informal'), ('formal', 'Formal')], required=True, default='formal', string='Formality')
 
-    @api.depends('firstname', 'lastname', 'name', 'type_greeting_msg', 'gender')
+    @api.depends('firstname', 'lastname', 'name', 'type_greeting_msg', 'gender', 'lang')
     def _compute_greeting_msg(self):
         for record in self:
             # example_to_translate_with_pot_and_po = _("translate me")
