@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from odoo import api, fields, models, _
 
-greeting_text_informal = -("Hello")
+greeting_text_informal = _("Hello")
 greeting_text_formal_female = _('Dear Mrs')
 greeting_text_formal_male = _('Dear Mr')
 greeting_text_formal_unknown = _('Dear')
