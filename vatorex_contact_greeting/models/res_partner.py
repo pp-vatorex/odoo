@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import api, fields, models
-from tools.translate import _
+from odoo import api, fields, models, _
 
 title = "Contact"
 greeting_text_informal = "Contact"
