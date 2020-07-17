@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from odoo import api, fields, models
+from tools.translate import _
 
-title = _("Contact")
+title = "Contact"
 greeting_text_informal = "Contact"
 greeting_text_formal_female = 'Dear Mrs'
 greeting_text_formal_male = 'Dear Mr'
