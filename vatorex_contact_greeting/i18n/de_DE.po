@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-16 09:44+0000\n"
-"PO-Revision-Date: 2020-07-16 09:44+0000\n"
+"POT-Creation-Date: 2020-07-17 07:01+0000\n"
+"PO-Revision-Date: 2020-07-17 07:01+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,27 +21,45 @@ msgid "Contact"
 msgstr "Kontakt"
 
 #. module: vatorex_contact_greeting
+#: code:addons/vatorex_contact_greeting/models/res_partner.py:0
+#, python-format
+msgid "Dear"
+msgstr "Sehr geehrte/r"
+
+#. module: vatorex_contact_greeting
+#: code:addons/vatorex_contact_greeting/models/res_partner.py:0
+#, python-format
+msgid "Dear Mr"
+msgstr ""
+
+#. module: vatorex_contact_greeting
+#: code:addons/vatorex_contact_greeting/models/res_partner.py:0
+#, python-format
+msgid "Dear Mrs"
+msgstr "Sehr geehrte Frau"
+
+#. module: vatorex_contact_greeting
 #: model:ir.model.fields.selection,name:vatorex_contact_greeting.selection__res_partner__type_greeting_msg__formal
 msgid "Formal"
-msgstr ""
+msgstr "Formell (Grüezi)"
 
 #. module: vatorex_contact_greeting
 #: model:ir.model.fields,field_description:vatorex_contact_greeting.field_res_partner__gender
 #: model:ir.model.fields,field_description:vatorex_contact_greeting.field_res_users__gender
 #: model_terms:ir.ui.view,arch_db:vatorex_contact_greeting.res_partner_view_form
 msgid "Gender"
-msgstr ""
+msgstr "Geschlecht"
 
 #. module: vatorex_contact_greeting
 #: model_terms:ir.ui.view,arch_db:vatorex_contact_greeting.res_partner_view_form
 msgid "Greeting"
-msgstr ""
+msgstr "Anrede"
 
 #. module: vatorex_contact_greeting
 #: model:ir.model.fields,field_description:vatorex_contact_greeting.field_res_partner__greeting_msg
 #: model:ir.model.fields,field_description:vatorex_contact_greeting.field_res_users__greeting_msg
 msgid "Greeting Msg"
-msgstr ""
+msgstr "Anrede Text"
 
 #. module: vatorex_contact_greeting
 #: model_terms:ir.ui.view,arch_db:vatorex_contact_greeting.res_partner_view_form
@@ -49,9 +67,15 @@ msgid "Greeting text changed again"
 msgstr ""
 
 #. module: vatorex_contact_greeting
+#: code:addons/vatorex_contact_greeting/models/res_partner.py:0
+#, python-format
+msgid "Hello"
+msgstr "Hallo"
+
+#. module: vatorex_contact_greeting
 #: model:ir.model.fields.selection,name:vatorex_contact_greeting.selection__res_partner__type_greeting_msg__informal
 msgid "Informal"
-msgstr ""
+msgstr "Informell (Duzis)"
 
 #. module: vatorex_contact_greeting
 #: model:ir.model.fields,field_description:vatorex_contact_greeting.field_res_partner__type_greeting_msg
@@ -62,4 +86,4 @@ msgstr ""
 #. module: vatorex_contact_greeting
 #: model:ir.model.fields.selection,name:vatorex_contact_greeting.selection__res_partner__gender__unknown
 msgid "Unknown"
-msgstr ""
+msgstr "Unbekannt"
