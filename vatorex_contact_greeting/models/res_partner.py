@@ -13,7 +13,7 @@ class ResPartner(models.Model):
     greeting_text_formal_unknown = 'Dear'
 
     # German
-    if lang == 'de_DE':
+    if self.lang == 'de_DE':
         greeting_text_informal = "Hallo"
         greeting_text_formal_female = 'Sehr geehrte Frau'
         greeting_text_formal_male = 'Sehr geehrter Herr'
