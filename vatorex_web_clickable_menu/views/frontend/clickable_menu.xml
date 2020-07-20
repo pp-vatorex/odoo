@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0"?>
 <t name="Submenu" t-name="website.submenu">
     <t t-set="has_visible_submenu" t-value="(submenu.is_mega_menu and submenu.is_visible) or submenu.child_id.filtered(lambda menu: menu.is_visible)"/>
     <li t-if="submenu.is_visible and not has_visible_submenu" t-attf-class="#{item_class or ''}">
