@@ -3,10 +3,14 @@
     <!-- This record will create the building block and its layout -->
     <template id="blog_figure" name="Vatorex: Blog figure">
         <section>
-            <figure class="mt-2 mb-4">
-                <img src="https://vatorex.odoo.com/web/image/684/Vatorex-Header-Background.jpg"/>
-                <figcaption class="figure-caption">Write a caption here</figcaption>
-            </figure>
+            <div class="container">
+                <div class="row">
+                    <figure class="mt-2 mb-4">
+                        <img src="https://vatorex.odoo.com/web/image/684/Vatorex-Header-Background.jpg" class="img img-responsive"/>
+                        <figcaption class="figure-caption">Write a caption here</figcaption>
+                    </figure>
+                </div>
+            </div>
         </section>
     </template>
 
