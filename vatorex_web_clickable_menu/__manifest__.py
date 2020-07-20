@@ -5,7 +5,7 @@
     'sequence': 7,
     'summary': 'Vatorex: Web clickable menu',
     'version': '0.1',
-    'description': 'This replaces the menu and makes the ul tags clickable',
+    'description': 'This replaces the website menu and makes the ul tags clickable',
     'depends': [
         'website',
     ],
