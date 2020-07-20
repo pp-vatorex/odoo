@@ -2,10 +2,12 @@
 <odoo>
     <!-- This record will create the building block and its layout -->
     <template id="blog_figure" name="Vatorex: Blog figure">
-        <figure class="mt-2 mb-4">
-            <img src="https://vatorex.odoo.com/web/image/684/Vatorex-Header-Background.jpg"/>
-            <figcaption class="figure-caption">Write a caption here</figcaption>
-        </figure>
+        <section>
+            <figure class="mt-2 mb-4">
+                <img src="https://vatorex.odoo.com/web/image/684/Vatorex-Header-Background.jpg"/>
+                <figcaption class="figure-caption">Write a caption here</figcaption>
+            </figure>
+        </section>
     </template>
 
     <!-- This record will create a preview of the building block in the left menu from where you choose the blocks -->
