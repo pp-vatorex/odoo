@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 {
-    'name': 'Vatorex: blog figure',
+    'name': 'Vatorex: Blog figure',
     'category': 'Hidden',
     'sequence': 7,
-    'summary': 'Vatorex: blog figure',
+    'summary': 'Vatorex: Blog figure',
     'version': '0.1',
-    'description': '',
+    'description': 'Adds a building block (for blog) to show a figure with caption',
     'depends': [
         'website',
         'website_mail',
