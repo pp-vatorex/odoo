@@ -21,7 +21,7 @@
         <xpath expr="//div[@id='snippet_structure']" position="inside">
             <div class="o_panel_body">
                 <t t-snippet="vatorex_blog_figure.blog_figure"
-                   t-thumbnail="/vatorex_custom_form/static/src/img/block_thumbnail.png"/>
+                   t-thumbnail="/vatorex_blog_figure/static/src/img/block_thumbnail.png"/>
             </div>
         </xpath>
     </template>
