@@ -3,8 +3,8 @@
     <template id="website.submenu">
         <t name="Submenu" t-name="vatorex.website.submenu">
             <style>
-                .dropdown-toggle:hover .dropdown-menu {
-                    display:block;;
+                .dropdown:hover .dropdown-menu {
+                    display:block;
                 }
             </style>
             <t t-set="has_visible_submenu" t-value="(submenu.is_mega_menu and submenu.is_visible) or submenu.child_id.filtered(lambda menu: menu.is_visible)"/>
