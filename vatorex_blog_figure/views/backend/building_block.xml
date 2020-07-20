@@ -5,10 +5,12 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <figure class="mt-2 mb-4">
-                        <img src="https://vatorex.odoo.com/web/image/684/Vatorex-Header-Background.jpg" class="img img-responsive"/>
-                        <figcaption class="figure-caption">Write a caption here</figcaption>
-                    </figure>
+                    <div class="col-md-12 col-sm-12">
+                        <figure>
+                            <img src="https://vatorex.odoo.com/web/image/684/Vatorex-Header-Background.jpg" class="img img-responsive"/>
+                            <figcaption class="figure-caption">Write a caption here</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
