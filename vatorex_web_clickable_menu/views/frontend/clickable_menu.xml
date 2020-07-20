@@ -2,6 +2,11 @@
 <odoo>
     <template id="website.submenu">
         <t name="Submenu" t-name="website.submenu">
+            <style>
+                body {
+                    color:green!important;
+                }
+            </style>
             <t t-set="has_visible_submenu" t-value="(submenu.is_mega_menu and submenu.is_visible) or submenu.child_id.filtered(lambda menu: menu.is_visible)"/>
             <li t-if="submenu.is_visible and not has_visible_submenu" t-attf-class="#{item_class or ''}">
                 <a t-att-href="submenu.clean_url()" t-attf-class="#{link_class or ''} #{'active' if submenu.clean_url() and unslug_url(request.httprequest.path) == unslug_url(submenu.clean_url()) else ''}" role="menuitem" t-ignore="true" t-att-target="'_blank' if submenu.new_window else None">
@@ -9,7 +14,7 @@
                 </a>
             </li>
             <li t-if="has_visible_submenu" t-attf-class="#{item_class or ''} dropdown #{         (submenu.clean_url() and submenu.clean_url() != '/' and any([request.httprequest.path == child.url for child in submenu.child_id if child.url]) or          (submenu.clean_url() and request.httprequest.path == submenu.clean_url())) and 'active'         } #{submenu.is_mega_menu and 'position-static'}">
-                <a t-attf-class="#{link_class or ''} dropdown-toggle #{submenu.is_mega_menu and 'o_mega_menu_toggle'}" data-toggle="dropdown" href="#pppp">
+                <a t-attf-class="#{link_class or ''} dropdown-toggle #{submenu.is_mega_menu and 'o_mega_menu_toggle'}" t-att-href="submenu.clean_url()">
                     <span t-field="submenu.name"/>
                 </a>
                 <div t-if="submenu.is_mega_menu" t-attf-class="dropdown-menu o_mega_menu #{submenu.mega_menu_classes}" data-name="Mega Menu" t-field="submenu.mega_menu_content"/>
