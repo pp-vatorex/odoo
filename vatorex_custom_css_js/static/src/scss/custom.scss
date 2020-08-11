@@ -1,3 +1,21 @@
 body {
-
+    font-size: 16px;
+    // entry-paragraph: font-size: 20px;
+}
+h1 {
+    font-size:48px;
+    // h1 home page heading: font-size: 62px;
+}
+h2 {
+    font-size:36px;
+}
+h3 {
+    font-size:28px;
+}
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+    text-transform: none!important;
+}
+.blockquote {
+    border-left:3px solid #FFCE00;
+    padding-left: 10px;
 }
