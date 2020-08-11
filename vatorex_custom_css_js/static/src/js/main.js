@@ -5,8 +5,8 @@ $(document).ready(function() {
         var data_vatorex_caption = this.data("vatorex_caption")
         if(!data_caption) {
             var alt = this.alt;
-            this.data("vatorex_caption", alt);
-            $(this).after('<div class="figure-caption">'+ alt + '</div>');
+            //this.data("vatorex_caption", alt);
+            //$(this).after('<div class="figure-caption">'+ alt + '</div>');
         }
     });
 
