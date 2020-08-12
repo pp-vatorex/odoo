@@ -4,7 +4,7 @@ $(document).ready(function() {
     blog.find('img').each(function() {
         var data_vatorex_caption = this.data("vatorex_caption")
         if(!data_caption) {
-            var alt = this.alt;
+            //var alt = this.alt;
             //this.data("vatorex_caption", alt);
             //$(this).after('<div class="figure-caption">'+ alt + '</div>');
         }
