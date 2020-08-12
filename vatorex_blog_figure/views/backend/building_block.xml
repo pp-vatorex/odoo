@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- This record will create the building block and its layout -->
+    <template id="blog_figure" name="Vatorex: Blog figure">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <figure>
+                            <img src="https://vatorex.odoo.com/web/image/684/Vatorex-Header-Background.jpg" class="img img-responsive" style="width:100%;"/>
+                            <figcaption class="figure-caption">Write a caption here</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- This record will create a preview of the building block in the left menu from where you choose the blocks -->
+    <template id="add_title_references_to_bar" inherit_id="website.snippets" name="Place into building blocks bar">
+        <xpath expr="//div[@id='snippet_structure']" position="inside">
+            <div class="o_panel_body">
+                <t t-snippet="vatorex_blog_figure.blog_figure"
+                   t-thumbnail="/vatorex_blog_figure/static/src/img/block_thumbnail.png"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

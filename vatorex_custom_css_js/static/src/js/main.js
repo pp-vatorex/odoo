@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // Display Alt-Tag in images in Blog
+    // Display Alt-Tag in images in Blog (deactivated)
     var blog = $( "body" ).not(".editor_enable").find($("#o_wblog_post_content"));
     blog.find('img').each(function() {
         var data_vatorex_caption = this.data("vatorex_caption")
