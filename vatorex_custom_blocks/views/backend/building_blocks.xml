@@ -35,15 +35,9 @@
     </template>
 
     <!-- HTML -->
-    <template id="custom_html" name="Vatorex: HTML">
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <p>add HTML here</p>
-                    </div>
-                </div>
-            </div>
+    <template id="s_html" name="Vatorex: HTML">
+        <section class="oe_snippet_body s_html" data-snippetHTML="" data-snippetHTMLOld="">
+            <p>Insert your custom code in Options.</p>
         </section>
     </template>
 
@@ -58,18 +52,16 @@
                 <t t-snippet="vatorex_custom_blocks.custom_blog_figure" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
 
                 <!-- HTML -->
-                <t t-snippet="vatorex_custom_blocks.custom_html" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
+                <t t-snippet="vatorex_custom_blocks.s_html" t-thumbnail="/vatorex_custom_blocks/static/src/img/s_html.png"/>
             </div>
         </xpath>
     </template>
 
     <!-- This record will create the snippet options in the left menu-->
-    <template id="custom_snippet_embed_options" inherit_id="website.snippet_options">
+    <template id="snippet_options" name="Edit Custom Html" inherit_id="website.snippet_options">
         <xpath expr="." position="inside">
-            <div data-snippet-option-id="custom_html" 
-                 data-selector=".custom-html" 
-                 data-selector-children=".oe_structure">
-                <li><a href="#" class="button js_edit_html">Edit HTML</a></li>
+            <div data-js="snippet_html" data-selector=".s_html">
+                <we-button data-html_ask="" data-no-preview="true">Edit Html</we-button>
             </div>
         </xpath>
     </template>
