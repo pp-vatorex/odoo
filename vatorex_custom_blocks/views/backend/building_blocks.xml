@@ -52,13 +52,13 @@
         <xpath expr="//div[@id='snippet_structure']" position="inside">
             <div class="o_panel_body">
                 <!-- Quote -->
-                <t t-snippet="vatorex_building_block.custom_quote" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
+                <t t-snippet="vatorex_custom_blocks.custom_quote" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
 
                 <!-- Figure -->
-                <t t-snippet="vatorex_building_block.custom_blog_figure" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
+                <t t-snippet="vatorex_custom_blocks.custom_blog_figure" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
 
                 <!-- HTML -->
-                <t t-snippet="vatorex_building_block.custom_html" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
+                <t t-snippet="vatorex_custom_blocks.custom_html" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
             </div>
         </xpath>
     </template>
