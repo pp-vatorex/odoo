@@ -21,7 +21,7 @@
         # data
 
         # assets
-        'views/frontent/html_assets.xml',
+        'views/frontend/html_assets.xml',
 
         # layout
 
