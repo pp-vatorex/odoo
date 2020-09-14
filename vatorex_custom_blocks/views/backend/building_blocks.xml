@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- These records will create the building blocks and its layout -->
+    
+    <!-- Quote -->
+    <template id="custom_quote" name="Vatorex: Quote">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">«Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.»</p>
+                            <footer class="blockquote-footer"><cite title="Source title">Willi Brunner</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Figure -->
+    <template id="custom_blog_figure" name="Vatorex: Blog figure">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <figure>
+                            <img src="https://vatorex.odoo.com/web/image/684/Vatorex-Header-Background.jpg" class="img img-responsive" style="width:100%;"/>
+                            <figcaption class="figure-caption">Write a caption here</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- HTML -->
+    <template id="custom_html" name="Vatorex: HTML">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <p>add HTML here</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- This record will create a preview of the building blocks in the left menu from where you choose the blocks -->
+    <template id="add_title_references_to_bar" inherit_id="website.snippets" name="Place into building blocks bar">
+        <xpath expr="//div[@id='snippet_structure']" position="inside">
+            <div class="o_panel_body">
+                <!-- Quote -->
+                <t t-snippet="vatorex_building_block.custom_quote" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
+
+                <!-- Figure -->
+                <t t-snippet="vatorex_building_block.custom_blog_figure" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
+
+                <!-- HTML -->
+                <t t-snippet="vatorex_building_block.custom_html" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- This record will create the snippet options in the left menu-->
+    <template id="custom_snippet_embed_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-snippet-option-id="custom_html" 
+                 data-selector=".custom-html" 
+                 data-selector-children=".oe_structure">
+                <li><a href="#" class="button js_edit_html">Edit HTML</a></li>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>
