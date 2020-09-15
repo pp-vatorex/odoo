@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 {
-    'name': 'Vatorex: Blog figure',
+    'name': 'Vatorex: Custom Blocks',
     'category': 'Hidden',
     'sequence': 7,
-    'summary': 'Vatorex: Blog figure',
+    'summary': 'Vatorex: Custom blocks',
     'version': '0.1',
-    'description': 'Adds a building block (for blog) to show a figure with caption',
+    'description': 'Adds custom Vatorex blocks to the Website builder',
     'depends': [
         'website',
         'website_mail',
@@ -21,13 +21,14 @@
         # data
 
         # assets
+        'views/frontend/html_assets.xml',
 
         # layout
 
         #backend
 
         # pages
-        'views/backend/building_block.xml',
+        'views/backend/building_blocks.xml',
 
         # generic views
 
