@@ -63,16 +63,16 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <div class="awards-media">
-                            <img src="/vatorex_custom_blocks/static/src/img/awards/European-Commission.png" title="European Commission">
-                            <img src="/vatorex_custom_blocks/static/src/img/awards/Innosuisse.png" title="Innosuisse">
-                            <img src="/vatorex_custom_blocks/static/src/img/awards/Solar-Impulse-Foundation.png" title="Solar Impulse Foundation: Efficient Solution">
-                            <img src="/vatorex_custom_blocks/static/src/img/awards/Klimastiftung.png" title="Klimastiftung">
-                            <img src="/vatorex_custom_blocks/static/src/img/awards/W-A-de-Vigier.png" title="W.A. de Vigier Foundation">
-                            <img src="/vatorex_custom_blocks/static/src/img/awards/Venture Kick.png" title="Venture Kick">
-                            <img src="/vatorex_custom_blocks/static/src/img/awards/Falling-Walls.png" title="Falling Walls Lab Finalist">
-                            <img src="/vatorex_custom_blocks/static/src/img/awards/Umweltpreis.png" title="Umweltpreis">
-                            <img src="/vatorex_custom_blocks/static/src/img/awards/Startup Campus.png" title="Startup Campus">
-                            <img src="/vatorex_custom_blocks/static/src/img/awards/Swiss-Innovation-Challenge.png" title="Swiss Innovation Challenge">
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/European-Commission.png" title="European Commission"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Innosuisse.png" title="Innosuisse"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Solar-Impulse-Foundation.png" title="Solar Impulse Foundation: Efficient Solution"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Klimastiftung.png" title="Klimastiftung"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/W-A-de-Vigier.png" title="W.A. de Vigier Foundation"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Venture Kick.png" title="Venture Kick"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Falling-Walls.png" title="Falling Walls Lab Finalist"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Umweltpreis.png" title="Umweltpreis"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Startup Campus.png" title="Startup Campus"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Swiss-Innovation-Challenge.png" title="Swiss Innovation Challenge"/>
                         </div>
                     </div>
                 </div>
@@ -99,6 +99,9 @@
 
                 <!-- HTML -->
                 <t t-snippet="vatorex_custom_blocks.s_html" t-thumbnail="/vatorex_custom_blocks/static/src/img/s_html.png"/>
+                
+                <!-- HTML -->
+                <t t-snippet="vatorex_custom_blocks.custom_awards" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
             </div>
         </xpath>
     </template>
