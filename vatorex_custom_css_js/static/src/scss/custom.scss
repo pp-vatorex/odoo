@@ -2,6 +2,9 @@ body {
     font-size: 16px;
     // entry-paragraph: font-size: 20px;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-weight:1000;
+}
 h1 {
     font-size:48px;
     // h1 home page heading: font-size: 62px;
@@ -23,4 +26,14 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
 .blockquote {
     border-left:3px solid #FFCE00;
     padding-left: 10px;
+}
+
+#footer ol {
+    margin-bottom:0!important;
+}
+.o_footer .text-muted {
+    color:white!important;
+}
+.o_brand_promotion {
+    display:none!important;
 }
