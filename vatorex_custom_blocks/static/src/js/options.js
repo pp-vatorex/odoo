@@ -21,7 +21,7 @@ odoo.define("website_snippet_html.html_option", function (require) {
             var def = utils.prompt({
                 'id': 'website_snippet_html_ask',
                 "window_title": _t("Edit HTML"),
-                "textarea": _t("Edit html"),
+                "textarea": _t("Edit HTML"),
                 "default": LZString.decompressFromEncodedURIComponent(this.$target.attr('data-snippetHTML')),
             });
             def.then(function (data) {
