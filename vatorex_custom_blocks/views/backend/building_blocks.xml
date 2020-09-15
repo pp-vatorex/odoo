@@ -34,6 +34,52 @@
         </section>
     </template>
 
+    <!-- Awards -->
+    <template id="custom_awards" name="Vatorex: Awards">
+<style>
+.awards-media {
+    display:flex;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    align-items:center;
+    justify-content:center;
+    flex-flow: wrap;
+}
+.awards-media img {
+    margin-right: 20px;
+    height: 50px;
+    filter:grayscale(100%);
+    -webkit-filter:grayscale(100%);
+    transition: all 0.1s;
+}
+.awards-media img:hover {
+    filter:grayscale(0%);
+    -webkit-filter:grayscale(0%);
+}
+</style>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="awards-media">
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/European-Commission.png" title="European Commission">
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Innosuisse.png" title="Innosuisse">
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Solar-Impulse-Foundation.png" title="Solar Impulse Foundation: Efficient Solution">
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Klimastiftung.png" title="Klimastiftung">
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/W-A-de-Vigier.png" title="W.A. de Vigier Foundation">
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Venture Kick.png" title="Venture Kick">
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Falling-Walls.png" title="Falling Walls Lab Finalist">
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Umweltpreis.png" title="Umweltpreis">
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Startup Campus.png" title="Startup Campus">
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Swiss-Innovation-Challenge.png" title="Swiss Innovation Challenge">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
     <!-- HTML -->
     <template id="s_html" name="Vatorex: HTML">
         <section class="oe_snippet_body s_html" data-snippetHTML="" data-snippetHTMLOld="">
