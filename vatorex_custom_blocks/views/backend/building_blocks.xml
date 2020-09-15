@@ -48,10 +48,11 @@
 }
 .awards-media img {
     margin-right: 20px;
+    margin-bottom:20px;
     height: 50px;
     filter:grayscale(100%);
     -webkit-filter:grayscale(100%);
-    transition: all 0.1s;
+    transition: all 0.3s;
 }
 .awards-media img:hover {
     filter:grayscale(0%);
@@ -68,10 +69,10 @@
                             <img src="/vatorex_custom_blocks/static/src/img/awards/Solar-Impulse-Foundation.png" title="Solar Impulse Foundation: Efficient Solution"/>
                             <img src="/vatorex_custom_blocks/static/src/img/awards/Klimastiftung.png" title="Klimastiftung"/>
                             <img src="/vatorex_custom_blocks/static/src/img/awards/W-A-de-Vigier.png" title="W.A. de Vigier Foundation"/>
-                            <img src="/vatorex_custom_blocks/static/src/img/awards/Venture Kick.png" title="Venture Kick"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Venture-Kick.png" title="Venture Kick"/>
                             <img src="/vatorex_custom_blocks/static/src/img/awards/Falling-Walls.png" title="Falling Walls Lab Finalist"/>
                             <img src="/vatorex_custom_blocks/static/src/img/awards/Umweltpreis.png" title="Umweltpreis"/>
-                            <img src="/vatorex_custom_blocks/static/src/img/awards/Startup Campus.png" title="Startup Campus"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Startup-Campus.png" title="Startup Campus"/>
                             <img src="/vatorex_custom_blocks/static/src/img/awards/Swiss-Innovation-Challenge.png" title="Swiss Innovation Challenge"/>
                         </div>
                     </div>
