@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- These records will create the building blocks and its layout -->
+    
+    <!-- Quote -->
+    <template id="custom_quote" name="Vatorex: Quote">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">«Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.»</p>
+                            <footer class="blockquote-footer"><cite title="Source title">Willi Brunner</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Figure -->
+    <template id="custom_blog_figure" name="Vatorex: Blog figure">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <figure>
+                            <img src="https://vatorex.odoo.com/web/image/684/Vatorex-Header-Background.jpg" class="img img-responsive" style="width:100%;"/>
+                            <figcaption class="figure-caption">Write a caption here</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Awards -->
+    <template id="custom_awards" name="Vatorex: Awards">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <h2 style="text-align:center;margin-bottom:50px;">Awards</h2>
+                        <div class="awards-media">
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/European-Commission.png" title="European Commission"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Innosuisse.png" title="Innosuisse"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Solar-Impulse-Foundation.png" title="Solar Impulse Foundation: Efficient Solution"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Klimastiftung.png" title="Klimastiftung"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/W-A-de-Vigier.png" title="W.A. de Vigier Foundation"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Venture-Kick.png" title="Venture Kick"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Falling-Walls.png" title="Falling Walls Lab Finalist"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Umweltpreis.png" title="Umweltpreis"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Startup-Campus.png" title="Startup Campus"/>
+                            <img src="/vatorex_custom_blocks/static/src/img/awards/Swiss-Innovation-Challenge.png" title="Swiss Innovation Challenge"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- HTML -->
+    <template id="s_html" name="Vatorex: HTML">
+        <section class="oe_snippet_body s_html" data-snippetHTML="" data-snippetHTMLOld="">
+            <p>Insert your custom code in Options.</p>
+        </section>
+    </template>
+
+    <!-- This record will create a preview of the building blocks in the left menu from where you choose the blocks -->
+    <template id="add_title_references_to_bar" inherit_id="website.snippets" name="Place into building blocks bar">
+        <xpath expr="//div[@id='snippet_structure']" position="inside">
+            <div class="o_panel_body">
+                <!-- Quote -->
+                <t t-snippet="vatorex_custom_blocks.custom_quote" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
+
+                <!-- Figure -->
+                <t t-snippet="vatorex_custom_blocks.custom_blog_figure" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
+
+                <!-- HTML -->
+                <t t-snippet="vatorex_custom_blocks.s_html" t-thumbnail="/vatorex_custom_blocks/static/src/img/s_html.png"/>
+                
+                <!-- HTML -->
+                <t t-snippet="vatorex_custom_blocks.custom_awards" t-thumbnail="/vatorex_custom_blocks/static/src/img/block_thumbnail.png"/>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- This record will create the snippet options in the left menu-->
+    <template id="snippet_options" name="Edit Custom Html" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js="snippet_html" data-selector=".s_html">
+                <we-button data-html_ask="" data-no-preview="true">Edit Html</we-button>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>
