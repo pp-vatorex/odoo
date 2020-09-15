@@ -84,27 +84,27 @@
             <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
             <div class="mc-field-group">
                 <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"/>
             </div>
             <div class="mc-field-group">
                 <label for="mce-FNAME">First Name  <span class="asterisk">*</span></label>
-                <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+                <input type="text" value="" name="FNAME" class="required" id="mce-FNAME"/>
             </div>
             <div class="mc-field-group">
                 <label for="mce-LNAME">Last Name  <span class="asterisk">*</span></label>
-                <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+                <input type="text" value="" name="LNAME" class="required" id="mce-LNAME"/>
             </div>
             <div class="mc-field-group size1of2">
                 <label for="mce-MMERGE5">Phone Number </label>
-                <input type="text" name="MMERGE5" class="" value="" id="mce-MMERGE5">
+                <input type="text" name="MMERGE5" class="" value="" id="mce-MMERGE5"/>
             </div>
             <div id="mce-responses" class="clear">
                 <div class="response" id="mce-error-response" style="display:none"></div>
                 <div class="response" id="mce-success-response" style="display:none"></div>
             </div>
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c4131fe54b18052087fa9359e_5c6292876c" tabindex="-1" value=""></div>
-            <div class="clear"><input class="pp_cta" type="submit" value="Send Ebook link to my inbox" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c4131fe54b18052087fa9359e_5c6292876c" tabindex="-1" value=""/></div>
+            <div class="clear"><input class="pp_cta" type="submit" value="Send Ebook link to my inbox" name="subscribe" id="mc-embedded-subscribe" class="button"/></div>
         </div>
     </form>
 </div>
