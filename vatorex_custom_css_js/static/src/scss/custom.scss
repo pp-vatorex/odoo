@@ -15,23 +15,50 @@ h2 {
 h3 {
     font-size:28px;
 }
+
+// Block: Quote
+.blockquote {
+    border-left:3px solid #FFCE00;
+    padding-left: 10px;
+}
+
+.blockquote {
+    border-left:3px solid #FFCE00;
+    padding-left: 10px;
+}
+
+// Block: Awards & media
+.awards-media {
+    display:flex;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    align-items:center;
+    justify-content:center;
+    flex-flow: wrap;
+}
+.awards-media img {
+    margin-right: 20px;
+    margin-bottom:20px;
+    height: 50px;
+    filter:grayscale(100%);
+    -webkit-filter:grayscale(100%);
+    transition: all 0.3s;
+}
+.awards-media img:hover {
+    filter:grayscale(0%);
+    -webkit-filter:grayscale(0%);
+}
+
+// Footer
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
     text-transform: none!important;
 }
-.blockquote {
-    border-left:3px solid #FFCE00;
-    padding-left: 10px;
-}
-
-.blockquote {
-    border-left:3px solid #FFCE00;
-    padding-left: 10px;
-}
-
 #footer ol {
     margin-bottom:0!important;
 }
 .o_footer .text-muted {
+    background-color:black!important;
     color:white!important;
 }
 .o_brand_promotion {
