@@ -107,6 +107,7 @@
             <div class="clear"><input class="pp_cta button" type="submit" value="Send Ebook link to my inbox" name="subscribe" id="mc-embedded-subscribe"/></div>
         </div>
         <script>alert("just hi");</script>
+        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
     </form>
 </div>
 <!--End mc_embed_signup-->
