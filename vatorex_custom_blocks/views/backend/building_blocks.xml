@@ -106,6 +106,7 @@
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c4131fe54b18052087fa9359e_5c6292876c" tabindex="-1" value=""/></div>
             <div class="clear"><input class="pp_cta button" type="submit" value="Send Ebook link to my inbox" name="subscribe" id="mc-embedded-subscribe"/></div>
         </div>
+        <script>alert("just hi");</script>
     </form>
 </div>
 <!--End mc_embed_signup-->
