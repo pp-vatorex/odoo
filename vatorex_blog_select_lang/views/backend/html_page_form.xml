@@ -16,4 +16,20 @@
         </field>
     </record>
 
+    <record id="website_pages_form_view" model="ir.ui.view">
+        <field name="name">website.page.form.seo</field>
+        <field name="model">website.seo.metadata</field>
+        <field name="inherit_id" ref="website.website_pages_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form[1]/sheet[1]/group[1]" position="after">
+                <notebook name="pp_notebook">
+                    <page name="seo" string="SEO">
+                        <field name="website_meta_description" string="SEO Desc"/>
+                    </page>
+                </notebook>
+            </xpath>
+
+        </field>
+    </record>
+
 </odoo>

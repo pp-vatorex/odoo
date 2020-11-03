@@ -8,4 +8,5 @@ class Post(models.Model):
 
 class HTML(models.Model):
     _inherit = "website.page"
+    name = fields.Char(translate=True)
     language_available_ids = fields.Many2many('res.lang',string='Website languages')
