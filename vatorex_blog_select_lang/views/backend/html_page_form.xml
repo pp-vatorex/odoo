@@ -12,9 +12,11 @@
                     </page>
                     <page name="seo" string="SEO">
                         <group>
-                            <field name="website_meta_title" description="SEO Title"/>
-                            <field name="website_meta_description" description="SEO Description"/>
-                            <field name="website_meta_keywords" description="SEO Keywords"/>
+                            <group>
+                                <field name="website_meta_title" description="SEO Title"/>
+                                <field name="website_meta_description" description="SEO Description"/>
+                                <field name="website_meta_keywords" description="SEO Keywords"/>
+                            </group>
                         </group>
                     </page>
                 </notebook>
