@@ -24,7 +24,6 @@
         #backend
         'views/backend/blog_post_form.xml',
         'views/backend/html_page_form.xml',
-        'views/backend/html_page_seo.xml',
 
         # pages
         'views/frontend/blog_template.xml',
