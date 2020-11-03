@@ -10,6 +10,13 @@
                     <page name="content" string="Content">
                         <field name="arch" string="content"/>
                     </page>
+                    <page name="seo" string="SEO">
+                        <group>
+                            <field name="website_meta_title" description="SEO Title"/>
+                            <field name="website_meta_description" description="SEO Description"/>
+                            <field name="website_meta_keywords" description="SEO Keywords"/>
+                        </group>
+                    </page>
                 </notebook>
             </xpath>
 
