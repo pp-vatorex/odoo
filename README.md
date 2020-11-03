@@ -1,1 +1,1 @@
-# odoo ok
+# odoo
