@@ -11,6 +11,7 @@ class WebsiteBlog(WebsiteBlog):
         '/blog',
         '/blog/page/<int:page>',
         '/blog/tag/<string:tag>/page/<int:page>',
+        '/blog/tag/<string:tag>',
         '''/blog/<model("blog.blog", "[('website_id', 'in', (False, current_website_id))]"):blog>''',
         '''/blog/<model("blog.blog"):blog>/page/<int:page>''',
         '''/blog/<model("blog.blog"):blog>/tag/<string:tag>''',
@@ -24,4 +25,5 @@ class WebsiteBlog(WebsiteBlog):
             current_lang = request.env['res.lang'].search([('code','=',request.context['lang'])])
             s = posts.filtered(lambda r: current_lang in r.language_available_ids )
         result.qcontext.update({'posts':s})
+        print(result)
         return result
