@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="index" inherit_id="website_blog.index">
-        <xpath expr="//div[@id='o_wblog_posts_loop_container']" position="inside">
+        <xpath expr="//div[@id='o_wblog_posts_loop_container']" position="before">
             <t t-if="not posts">
                 <div class="container">
                     <div class="alert alert-warning">
-                        There are no posts to display
+                        Sorry, there are no posts to display
                     </div>
                 </div>
             </t>
