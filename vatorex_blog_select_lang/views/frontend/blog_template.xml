@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="index" inherit_id="website_blog.index">
-        <xpath expr="//div[@id='wrap']" position="inside">
+        <xpath expr="//div[@id='o_wblog_posts_loop_container']" position="inside">
             <t t-if="not posts">
                 <div class="container">
                     <div class="alert alert-warning">
