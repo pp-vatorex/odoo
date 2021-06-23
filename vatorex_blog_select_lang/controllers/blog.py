@@ -8,7 +8,7 @@ from odoo.addons.website.controllers.main import QueryURL
 class WebsiteBlog(WebsiteBlog):
 
     @http.route([
-        '/blog',
+        '/blog'
         # '/blog/page/<int:page>',
         # '/blog/tag/<string:tag>/page/<int:page>',
         # '''/blog/<model("blog.blog", "[('website_id', 'in', (False, current_website_id))]"):blog>''',
