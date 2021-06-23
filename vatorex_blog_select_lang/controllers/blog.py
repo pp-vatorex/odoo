@@ -9,12 +9,12 @@ class WebsiteBlog(WebsiteBlog):
 
     @http.route([
         '/blog',
-        '/blog/page/<int:page>',
-        '/blog/tag/<string:tag>/page/<int:page>',
-        '''/blog/<model("blog.blog", "[('website_id', 'in', (False, current_website_id))]"):blog>''',
-        '''/blog/<model("blog.blog"):blog>/page/<int:page>''',
-        '''/blog/<model("blog.blog"):blog>/tag/<string:tag>''',
-        '''/blog/<model("blog.blog"):blog>/tag/<string:tag>/page/<int:page>''',
+        # '/blog/page/<int:page>',
+        # '/blog/tag/<string:tag>/page/<int:page>',
+        # '''/blog/<model("blog.blog", "[('website_id', 'in', (False, current_website_id))]"):blog>''',
+        # '''/blog/<model("blog.blog"):blog>/page/<int:page>''',
+        # '''/blog/<model("blog.blog"):blog>/tag/<string:tag>''',
+        # '''/blog/<model("blog.blog"):blog>/tag/<string:tag>/page/<int:page>''',
     ], type='http', auth="public", website=True)
 
     def blog(self, blog=None, tag=None, page=1, **opt):
